@@ -1,0 +1,116 @@
+{
+  "seller": [
+    {
+      "name": "fubedigug",
+      "email": "eifegn@gmail.com",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "name": "mihir",
+      "email": "m@gmail.com",
+      "password": "mihir",
+      "id": 3
+    },
+    {
+      "name": "About",
+      "email": "yhdvb@gmail.com",
+      "password": "about",
+      "id": 5
+    },
+    {
+      "name": "shyam",
+      "email": "sh@gmail.com",
+      "password": "shyam",
+      "id": 11
+    }
+  ],
+  "products": [
+    {
+      "name": "apple",
+      "price": "60000",
+      "catagory": "mobile",
+      "color": "envo",
+      "image": "https://source.unsplash.com/600x400/?iphone",
+      "desc": "dvsdd dvsvsd",
+      "id": 4
+    },
+    {
+      "name": "laptop",
+      "price": "70000",
+      "catagory": "laptop",
+      "color": "black",
+      "image": "https://source.unsplash.com/600x400/?dell laptop",
+      "desc": "dvd vnvr viubvuw",
+      "id": 5
+    },
+    {
+      "name": "ipad",
+      "price": "60000",
+      "catagory": "tablet",
+      "color": "white",
+      "image": "https://source.unsplash.com/600x400/?ipad",
+      "desc": "fwhef efwif",
+      "id": 6
+    },
+    {
+      "name": "samsung",
+      "price": "30000",
+      "catagory": "mobile",
+      "color": "white",
+      "image": "https://source.unsplash.com/600x400/?samsung phone",
+      "desc": "rgvr rewgvj",
+      "id": 7
+    },
+    {
+      "name": "digital watch",
+      "price": "10000",
+      "catagory": "watch",
+      "color": "blue",
+      "image": "https://source.unsplash.com/600x400/?digital watch",
+      "desc": "ascnv ebvav",
+      "id": 8
+    },
+    {
+      "name": "HP",
+      "price": "60000",
+      "catagory": "laptop",
+      "color": "gray",
+      "image": "https://source.unsplash.com/600x400/?HP laptop",
+      "desc": "fergv rgrbg",
+      "id": 9
+    }
+  ],
+  "users": [
+    {
+      "name": "hrushikesh",
+      "email": "hr@gmail.com",
+      "password": "hrhrhr",
+      "id": 1
+    },
+    {
+      "name": "mumbai",
+      "email": "mumbai@gmail.com",
+      "password": "egfergregerg",
+      "id": 2
+    },
+    {
+      "name": "shyam",
+      "email": "sh@gmail.com",
+      "password": "shyam",
+      "id": 3
+    },
+    {
+      "name": "mihir",
+      "email": "m@gmail.com",
+      "password": "mihir",
+      "id": 4
+    },
+    {
+      "name": "yash",
+      "email": "y@gmail.com",
+      "password": "yashn",
+      "id": 9
+    }
+  ]
+}

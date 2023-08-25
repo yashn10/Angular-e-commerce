@@ -1,1 +1,80 @@
-<p>home works!</p>
+<div class="carousel-inner rounded-5 shadow-4-strong">
+    <mdb-carousel [animation]="'fade'">
+        <mdb-carousel-item>
+            <img src="https://source.unsplash.com/1800x650/?hill-stations" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+        </mdb-carousel-item>
+
+        <mdb-carousel-item>
+            <img src="https://source.unsplash.com/1800x650/?nature-mountains" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </mdb-carousel-item>
+
+        <mdb-carousel-item>
+            <img src="https://source.unsplash.com/1800x650/?universe" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+        </mdb-carousel-item>
+    </mdb-carousel>
+</div>
+
+
+<div class="container-fluid my-5">
+    <h2 class="text-center">Our Top Products</h2>
+    <hr style="width: 10%; border: 1px solid blue;">
+    <div class="row row-cols-1 row-cols-md-4 g-4 my-4">
+        <div class="col py-3 text-center" *ngFor="let item of allproducts">
+            <div class="card h-100">
+                <img src="{{item.image}}" class="card-img-top" alt="Hollywood Sign on The Hill" />
+                <div class="card-body">
+                    <h4 class="card-title">{{item.name}}</h4>
+                    <hr>
+                    <p style="font-weight: 500;" class="card-text">price - {{item.price}}.</p>
+                    <p style="font-weight: 500;" class="card-text">color - {{item.color}}.</p>
+                </div>
+                <div class="card-body">
+                    <a type="button" routerLink="/details/{{item.id}}" class="btn btn-outline-primary ">View details</a>
+                    <a type="button" class="btn btn-outline-success">Add to cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<button type="button" mdbBtn color="primary" class="waves-light" data-toggle="modal" data-target="#basicExample"
+    (click)="frame.show()" mdbWavesEffect>Launch Modal</button>
+<div mdbModal #frame="mdbModal" class="modal fade top" id="frameModalTop" tabindex="-1" role="dialog"
+    aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-notify modal-danger" role="document">
+
+        <div class="modal-content text-center">
+
+            <div class="modal-header d-flex justify-content-center">
+                <p class="heading">Are you sure?</p>
+            </div>
+
+            <div class="modal-body">
+                <mdb-icon fas icon="times" size="4x" class="animated rotateIn"></mdb-icon>
+            </div>
+
+            <div class="modal-footer justify-content-center">
+                <a href="https://mdbootstrap.com/docs/angular/pro/" mdbBtn color="danger" outline="true"
+                    class="waves-effect" mdbWavesEffect>Yes</a>
+                <a type="button" mdbBtn color="danger" class="waves-effect" mdbWavesEffect data-dismiss="modal"
+                    (click)="frame.hide()">No</a>
+            </div>
+        </div>
+
+    </div>
+</div>
